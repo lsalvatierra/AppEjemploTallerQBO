@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AppEjemploTallerQBO</string>
+    <string name="titulo">CÁLCULO DEL IMC</string>
+    <string name="talla">Ingrese talla (cm)</string>
+    <string name="peso">Ingrese peso (Kg)</string>
+    <string name="calcular">Calcular IMC</string>
+    <string name="titulokotlin">CÁLCULO DEL IMC-Kotlin</string>
+</resources>

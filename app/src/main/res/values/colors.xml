@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#4BB1B5</color>
+    <color name="colorimcbajo">#878787</color>
+
+    <color name="colorimcnormal">#041186</color>
+    <color name="colorimcsobrepeso">#E57979</color>
+    <color name="colorimcobesidad1">#C33535</color>
+    <color name="colorimcobesidad2">#BC0F0F</color>
+    <color name="colorimcobesidad3">#610101</color>
+
+</resources>
