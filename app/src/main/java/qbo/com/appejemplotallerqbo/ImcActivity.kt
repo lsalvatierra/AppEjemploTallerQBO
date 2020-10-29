@@ -22,7 +22,13 @@ class ImcActivity : AppCompatActivity() {
             }else if(etpesokt.text.toString() == ""){
                 etpesokt.error = "Ingrese su peso"
             }else{
-                var peso : Double = etpesokt.text.toString().toDouble()
+                var nombre : Double = etpesokt.text.toString().toDouble()
+                var nota1 : Double = ettallakt.text.toString().toDouble()
+                var nota2 : Double = etnota2.text.toString().toDouble()
+                var nota3 : Double = etnota3.text.toString().toDouble()
+                var imc : Double
+                imc = (nota1 + nota2 + nota3) / 3
+                /*var peso : Double = etpesokt.text.toString().toDouble()
                 var talla : Double = ettallakt.text.toString().toDouble()
                 var tallam : Double
                 var imc : Double
@@ -48,12 +54,12 @@ class ImcActivity : AppCompatActivity() {
                     resultadoIMC = "Obesidad mórbida"
                     tvresultadokt.setTextColor(ContextCompat.getColor(this, R.color.colorimcobesidad3))
                 }
-
+                */
                 val df = DecimalFormat("##.00")
-                tvresultadokt.text = ("Su valor de IMC es:" +
-                        df.format(imc) + " ud. se encuentra: " +
-                        resultadoIMC)
-                lstimc.add("Valor IMC: " + df.format(imc) + " " + resultadoIMC)
+                tvresultadokt.text = ("Alumno:" + nombre
+                         + " ud. se encuentra: " +
+                        df.format(imc))
+                lstimc.add("Alumno: " + nombre + " " + df.format(imc))
                 val adapter = ArrayAdapter(this,
                         android.R.layout.simple_list_item_1,
                         lstimc)
